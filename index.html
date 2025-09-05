@@ -1,24 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Top 5 Videojuegos Épicos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
+    <!-- Menú gamer -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#zelda">Zelda BOTW</a></li>
+            <li><a href="#gta">GTA V</a></li>
+            <li><a href="#minecraft">Minecraft</a></li>
+            <li><a href="#gow">God of War</a></li>
+            <li><a href="#cod">COD MW</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>🎮 Top 5 Videojuegos Épicos 🎮</h1>
+        <p>Explora mundos increíbles y descubre los videojuegos más icónicos de la historia gamer.</p>
+    </header>
+
+    <main class="container">
+        <!-- Juego 1 -->
+        <div class="card" id="zelda">
+            <h2>The Legend of Zelda: Breath of the Wild</h2>
+            <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/wiiu_14/SI_WiiU_TheLegendOfZeldaBreathOfTheWild_image1600w.jpg" alt="Zelda BOTW">
+            <p class="descripcion">Un título revolucionario de mundo abierto que redefinió la saga de Zelda con exploración libre y un vasto universo lleno de secretos.</p>
+            <button onclick="toggleInfo('zelda-info')">Ver más</button>
+            <div id="zelda-info" class="extra">
+                <h3>Resumen</h3>
+                <p>Link despierta después de 100 años para derrotar a Ganon y salvar Hyrule en una aventura sin límites.</p>
+                <h3>Descripción</h3>
+                <p>Explora montañas, bosques, templos y un extenso mapa con una jugabilidad innovadora que mezcla acción, aventuras y puzles.</p>
+            </div>
+        </div>
+
+        <!-- Juego 2 -->
+        <div class="card" id="gta">
+            <h2>Grand Theft Auto V</h2>
+            <img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages02/2016/08/30/F1311F3B-298C-42B7-9D70-DD40576FAFC1/98.jpg?crop=624,351,x10,y0&width=1900&height=1069&optimize=high&format=webply" alt="GTA V">
+            <p class="descripcion">Uno de los videojuegos más vendidos de todos los tiempos, conocido por su mundo abierto en Los Santos y sus múltiples protagonistas.</p>
+            <button onclick="toggleInfo('gta-info')">Ver más</button>
+            <div id="gta-info" class="extra">
+                <h3>Resumen</h3>
+                <p>La historia sigue a Michael, Franklin y Trevor en misiones llenas de acción, crimen y traiciones.</p>
+                <h3>Descripción</h3>
+                <p>Ofrece exploración libre, conducción, misiones épicas y un modo online que sigue activo con millones de jugadores.</p>
+            </div>
+        </div>
+
+        <!-- Juego 3 -->
+        <div class="card" id="minecraft">
+            <h2>Minecraft</h2>
+            <img src="https://xboxwire.thesourcemediaassets.com/sites/4/15YR_Free_Cape-1-7cbcb0739e3df57534ec-9063efed017354d1b1c3.jpg" alt="Minecraft">
+            <p class="descripcion">Un fenómeno cultural donde los jugadores pueden construir, explorar y sobrevivir en mundos creados con bloques.</p>
+            <button onclick="toggleInfo('minecraft-info')">Ver más</button>
+            <div id="minecraft-info" class="extra">
+                <h3>Resumen</h3>
+                <p>Un sandbox infinito que fomenta la creatividad y la exploración con infinitas posibilidades.</p>
+                <h3>Descripción</h3>
+                <p>Incluye modos de supervivencia, creativo y multijugador online, con una comunidad que nunca deja de innovar.</p>
+            </div>
+        </div>
+
+        <!-- Juego 4 -->
+        <div class="card" id="gow">
+            <h2>God of War (2018)</h2>
+            <img src="https://i.ytimg.com/vi/1OlS3W5vgao/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBclDD_Uju1Prn-CruBip5TLEGX3g" alt="God of War">
+            <p class="descripcion">Una nueva era para Kratos, ahora acompañado de su hijo Atreus, en una aventura inspirada en la mitología nórdica.</p>
+            <button onclick="toggleInfo('gow-info')">Ver más</button>
+            <div id="gow-info" class="extra">
+                <h3>Resumen</h3>
+                <p>Kratos y Atreus emprenden un viaje lleno de batallas y revelaciones familiares en tierras nórdicas.</p>
+                <h3>Descripción</h3>
+                <p>Con un combate visceral y una narrativa profunda, redefine la franquicia con un enfoque más humano y cinematográfico.</p>
+            </div>
+        </div>
+
+        <!-- Juego 5 -->
+        <div class="card" id="cod">
+            <h2>Call of Duty: Modern Warfare</h2>
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2000950/capsule_616x353.jpg?t=1678294805" alt="COD Modern Warfare">
+            <p class="descripcion">Un shooter en primera persona que marcó la saga Call of Duty con una campaña intensa y un multijugador adictivo.</p>
+            <button onclick="toggleInfo('cod-info')">Ver más</button>
+            <div id="cod-info" class="extra">
+                <h3>Resumen</h3>
+                <p>Una historia moderna sobre operaciones especiales en conflictos internacionales.</p>
+                <h3>Descripción</h3>
+                <p>Ofrece acción realista, armas modernas y un modo online competitivo que lo convierte en un favorito entre los gamers.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>👾 Videojuegos Épicos - Vive la experiencia gamer ⚡</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

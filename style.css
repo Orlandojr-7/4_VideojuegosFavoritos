@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #0d0d0d;
+    color: #eee;
+    line-height: 1.6;
+}
+
+/* NAV gamer */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00ff9d;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 0 0 8px #6a00f4;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 15px #00ff9d, 0 0 10px #6a00f4;
+}
+
+header {
+    background: linear-gradient(90deg, #6a00f4, #00ff9d);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem 3rem 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    margin-top: 60px; /* espacio por el nav fijo */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px #00ff9d, 0 0 15px #6a00f4;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: #00ff9d;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 8px #6a00f4;
+}
+
+.card img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0;
+    border: 3px solid #6a00f4;
+}
+
+.descripcion {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+button {
+    background: #6a00f4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: #00ff9d;
+    color: #111;
+    box-shadow: 0 0 12px #00ff9d;
+}
+
+.extra {
+    display: none;
+    text-align: left;
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #00ff9d;
+}
+
+.extra h3 {
+    color: #6a00f4;
+}
+
+footer {
+    background: #111;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #6a00f4;
+}
+
